@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@500&display=swap');*/
+
+.navbar-nav .nav-link:hover {
+    color: white !important;
+}
+
+
+.publicidad {
+   
+    background-color: #6a767b;
+    max-width: auto;
+    min-width: 300;
+}
+
+.fondo{
+    background-color: #6a767b;
+    max-width: auto;
+    min-width: 300;
+   
+}
+.piePagina {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.9682247899159664) 0%, rgb(3, 64, 95) 36%, rgb(2, 74, 102) 100%);
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+
+
+@media screen and (max-width: 768px){
+    .card-text{
+        font-size: 0.75rem;
+        }
+    
+        .h5, h5 {
+        font-size: 1rem
+        }
+        .btn{
+        font-size: 0.7rem;   
+        }
+        
+        
+}
+    
+
+   
