@@ -1,14 +1,14 @@
-function tarjetaOver(tarjeta) {
+function cardOver(tarjeta) {
     tarjeta.classList.replace(`border-muted`, `border-primary`)
 }
 
 
-function tarjetaLeave(tarjeta) {
+function cardLeave(tarjeta) {
     tarjeta.classList.replace(`border-primary`, `border-muted`)
 }
 
 
-function tarjetaClick(tarjeta) {
+function cardClick(tarjeta) {
     tarjeta.ariaChecked = true
     tarjeta.classList.replace(`border-primary`, `border-success`)
     tarjeta.classList.replace(`border-muted`, `border-success`)
@@ -28,14 +28,15 @@ function tarjetaClick(tarjeta) {
 }
 
 
-function eventos(tarjeta) {
-    tarjeta.addEventListener('mouseover', () => tarjetaOver(tarjeta))
-    tarjeta.addEventListener('mouseleave', () => tarjetaLeave(tarjeta))
-    tarjeta.addEventListener('click', () => tarjetaClick(tarjeta))
+function event(tarjeta) {
+    tarjeta.addEventListener('mouseover', () => cardOver(tarjeta))
+    tarjeta.addEventListener('mouseleave', () => cardLeave(tarjeta))
+    tarjeta.addEventListener('click', () => cardClick(tarjeta))
 
 }
 
 
-eventos(tarjeta1)
-eventos(tarjeta2)
-eventos(tarjeta3)
+event(tarjeta1)
+event(tarjeta2)
+event(tarjeta3)
+

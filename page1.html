@@ -40,7 +40,7 @@
 
     <main>
         <!--TARJETAS-->
-        <section class="tarjetas card-group m-5 gap-3">
+        <section name="tarjetas" class="tarjetas card-group m-5 gap-3">
 
             <div id="tarjeta1" class="btn card border border-2 border-muted">
                 <div class="card-body">
@@ -92,7 +92,7 @@
                         </div>
 
                         <div class="form-floating mb-3 text-muted ">
-                            <input id="ref3" name="email" type="email" class="form-control"  placeholder="name@example.com" required>
+                            <input id="ref3" name="email" type="email" class="form-control"  placeholder="name@example.com" required/>
                             <label for="floatingInput">Correo</label>
                         </div>
 
@@ -108,7 +108,7 @@
                                         <label for="floatingSelect te">Categoría</label>
                                         <select id="seleccion" name="opciones" class="form-select " 
                                             aria-label="Floating label select example">
-                                            <option selected value="">Seleccione una Categoría</option >
+                                            <option selected value="0">Seleccione una Categoría</option >
                                             <option value="1">Estudiante</option> 
                                             <option value="2">Trainee</option>
                                             <option value="3">Junior</option>
@@ -119,12 +119,12 @@
                         </div>
 
                         <div class="mb-3">
-                            <p class="alert alert-primary" id="totalCompra">Total a Pagar: $</p required>
+                            <p class="alert alert-primary" id="totalCompra">Total a Pagar: $</p>
                         </div>
                         
                         <div class="btn-group d-flex justify-content-center gap-2">
-                        <button id="boton1" type="button" class="btn btn-success btn-sm bg-opacity-50">Borrar</button>
-                        <button id="boton2" type="button"  class="btn btn-success btn-sm bg-opacity-50">Resumen</button>
+                        <button id="boton1" type="button" class="btn btn-success btn-sm bg-opacity-50">Cancelar</button>
+                        <button id="boton2" type="button"  class="btn btn-success btn-sm bg-opacity-50">Comprar</button>
                     </div>
                 </form>
         </section>
@@ -132,7 +132,7 @@
 
     </main>
 
-    <!--FOTER-->
+    <!--F0OTER-->
 
     <footer class="container-fluid piePagina pt-4 " style="list-style-type: none;">
         <div class="container-fluid text-center ">
@@ -173,14 +173,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-
-    <script src="javascript.js" ></script>
-
-    <script src="funciones.js"></script>
-
-    <script src="funciones-select.js"></script>
-    <script src="funciones-botones.js"></script>
-    <script src="funciones-costo.js"></script>
+        
+    <script src="main.js" ></script>
+        
+    <script src="function-card.js"></script>
+        
+    <script src="function-select.js"></script>
+    <script src="function-button.js"></script>
+    <script src="function-cost.js"></script>
+    <script src="function-mail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <script src="sweetalert2.all.min.js"></script>
+        
+    
 
 </body>
 
